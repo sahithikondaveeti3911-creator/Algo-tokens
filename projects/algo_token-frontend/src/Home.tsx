@@ -24,7 +24,7 @@ const Home: React.FC<HomeProps> = () => {
   if (!activeAddress) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden text-white px-6">
-        {/* Floating Gradients with Unique Patterns */}
+        {/* Floating Gradients with Unique Patterns */ }
         <div className="absolute inset-0 -z-10">
           <div className="absolute top-1/4 left-1/3 w-80 h-80 bg-gradient-to-br from-violet-600 to-purple-700 rounded-full mix-blend-multiply blur-3xl opacity-20 animate-pulse" />
           <div className="absolute bottom-1/4 right-1/3 w-80 h-80 bg-gradient-to-br from-indigo-600 to-blue-700 rounded-full mix-blend-multiply blur-3xl opacity-25 animate-pulse delay-700" />
