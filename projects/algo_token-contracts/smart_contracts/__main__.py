@@ -26,7 +26,7 @@ load_dotenv()
 # Determine the root path based on this file's location.
 root_path = Path(__file__).parent
 
-# ----------------------- Contract Configuration ----------------------- #
+# ------------------------ Contract Configuration ------------------------ #
 
 
 @dataclasses.dataclass
@@ -156,7 +156,7 @@ def build(output_dir: Path, contract_path: Path) -> Path:
                     )
                 else:
                     raise Exception(
-                        f"Could not generate typed client:\n{generate_result.stdout}"
+                        f"Could not generate typed client:\n{ generate_result.stdout }"
                     )
     if client_file:
         return output_dir / client_file
